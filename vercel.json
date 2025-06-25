@@ -1,9 +1,0 @@
-{
-  "buildCommand": "npm run vercel-build",
-  "outputDirectory": "dist",
-  "framework": "vite",
-  "installCommand": "npm install --legacy-peer-deps --platform=linux --arch=x64",
-  "env": {
-    "NODE_ENV": "production"
-  }
-} 
