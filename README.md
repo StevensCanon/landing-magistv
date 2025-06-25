@@ -12,30 +12,7 @@ Aplicación web de landing page para MagisTV construida con Vue 3, TypeScript y 
 - **Tailwind CSS** para estilos
 - **Oh Vue Icons** para iconografía
 
-## 📁 Estructura del Proyecto
 
-```
-src/
-├── components/          # Componentes reutilizables
-│   ├── ui/             # Componentes de interfaz de usuario
-│   │   ├── Card.vue
-│   │   ├── LayoutGrid.vue
-│   │   ├── FeaturesSection.vue
-│   │   └── Pricing.vue
-│   ├── Hero.vue        # Componente hero principal
-│   ├── Footer.vue      # Componente footer
-│   └── index.ts        # Exportaciones de componentes
-├── Pages/              # Páginas de la aplicación
-│   ├── Home.vue        # Página principal
-│   ├── Contacto.vue    # Página de contacto
-│   ├── Dispositivos.vue # Página de dispositivos
-│   └── index.ts        # Exportaciones de páginas
-├── assets/             # Recursos estáticos
-├── router.ts           # Configuración de rutas
-├── main.ts             # Punto de entrada
-├── App.vue             # Componente raíz
-└── style.css           # Estilos globales
-```
 
 ## 🛠️ Configuración
 
@@ -64,17 +41,7 @@ npm run build
 npm run preview
 ```
 
-## 🎨 Componentes
 
-### Componentes Principales
-- **Hero**: Sección principal de la landing page
-- **Footer**: Pie de página con información de contacto
-
-### Componentes UI
-- **Card**: Tarjeta para mostrar contenido
-- **LayoutGrid**: Grid responsivo para layouts
-- **FeaturesSection**: Sección de características
-- **Pricing**: Sección de precios y planes
 
 ## 📱 Páginas
 
