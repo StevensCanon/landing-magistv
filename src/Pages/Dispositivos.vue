@@ -117,8 +117,8 @@ const devices = {
             <!-- Mockup Android -->
             <div class="flex justify-center relative z-10">
               <Android
-                srcLight="src/assets/MagisAndroid.jpg"
-                srcDark="src/assets/MagisAndroid.jpg"
+                srcLight="https://themagistvgratis.com/wp-content/uploads/2024/12/descargar-magistv-457x1024.webp"
+                srcDark="https://themagistvgratis.com/wp-content/uploads/2024/12/descargar-magistv-457x1024.webp"
                 class="transform group-hover:scale-105 transition-transform duration-300"
                 alt="Magis Android"
               />
