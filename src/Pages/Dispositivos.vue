@@ -120,6 +120,7 @@ const devices = {
                 srcLight="src/assets/MagisAndroid.jpg"
                 srcDark="src/assets/MagisAndroid.jpg"
                 class="transform group-hover:scale-105 transition-transform duration-300"
+                alt="Magis Android"
               />
             </div>
           </div>
