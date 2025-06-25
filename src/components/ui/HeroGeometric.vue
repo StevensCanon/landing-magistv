@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
-import { Circle } from 'lucide-vue-next';
-import { cn } from '../../lib/utils';
 import ElegantShape from './ElegantShape.vue';
 
 const props = defineProps<{
