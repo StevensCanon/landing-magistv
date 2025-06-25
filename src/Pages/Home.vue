@@ -106,7 +106,7 @@ const iptv = [
       <Hero />
     </section>
 
-    <section id="series-peliculas ">
+    <section id="series-peliculas">
       <div class="mx-8 p-8">
         <h1 class="text-2xl font-bold my-6">Películas</h1>
         <div class="grid grid-cols-5 gap-8 h-70 ">
@@ -126,12 +126,12 @@ const iptv = [
         class="absolute inset-0 flex justify-center items-center pointer-events-none z-0"
       >
         <div
-          class="w-[800px] h-[500px] rounded-full bg-[radial-gradient(circle,_rgba(255,255,255,0.3)_0%,_transparent_70%)] blur-3xl animate-pulse"
+          class="w-[800px] h-[500px] rounded-full bg-[radial-gradient(circle,_rgba(255,255,255,0.3)_0%,_transparent_70%)] blur-2xl animate-pulse"
         ></div>
       </div>
 
       <div
-        class="relative max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center z-10"
+        class="relative max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center z-10 py-20"
       >
         <div>
           <h1 class="text-orange-500 text-4xl font-bold mb-4">

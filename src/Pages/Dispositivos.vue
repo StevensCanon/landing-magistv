@@ -135,7 +135,7 @@ const devices = {
     </div>
   </section>
 
-  <section id="install" class="px-4 py-16 bg-black text-white">
+  <section id="install" class="relative bg-gradient-to-tr from-gray-900 via-black to-gray-800 text-white px-6 py-20 min-h-screen ">
     <h1 class="mx-10 text-6xl font-bold text-orange-500 mb-16">
       Instalación en dispositivos
     </h1>
@@ -143,7 +143,7 @@ const devices = {
     <div class="max-w-4xl mx-10 space-y-16">
       <!-- SMART TV -->
       <div>
-        <h2 class="text-2xl font-bold text-orange-300 mb-6">
+        <h2 class="text-2xl font-bold text-slate-400 mb-6">
           Instalación en Smart TV (Fire TV Stick / TV Box)
         </h2>
         <ol class="list-decimal list-inside text-gray-300 space-y-4 text-lg">
@@ -180,7 +180,7 @@ const devices = {
 
       <!-- ANDROID -->
       <div>
-        <h2 class="text-2xl font-bold text-orange-300 mb-6">
+        <h2 class="text-2xl font-bold text-slate-400 mb-6">
           Instalación en Android (Teléfonos y Tablets)
         </h2>
         <ol class="list-decimal list-inside text-gray-300 space-y-4 text-lg">
@@ -222,7 +222,7 @@ const devices = {
 
       <!-- PC -->
       <div>
-        <h2 class="text-2xl font-bold text-orange-300 mb-6">
+        <h2 class="text-2xl font-bold text-slate-400 mb-6">
           Instalación en PC (Emulador Android)
         </h2>
         <ol class="list-decimal list-inside text-gray-300 space-y-4 text-lg">

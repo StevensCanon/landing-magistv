@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-import AuroraText from './AuroraText.vue'
+import AuroraText from './ui/AuroraText.vue'
 </script>
 
 <template>
