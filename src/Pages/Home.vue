@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { MotionPlugin } from '@vueuse/motion';
-import { onMounted } from 'vue';
 import { Card, LayoutGrid, FeaturesSection, Pricing } from '../components';
 import Hero from '../components/Hero.vue';
 import HeroGeometric from '../components/ui/HeroGeometric.vue';
