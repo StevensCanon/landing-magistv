@@ -101,65 +101,74 @@ const iptv = [
 </script>
 
 <template>
-  <div class="">
+  <div>
+    <!-- HERO -->
     <section id="hero">
       <Hero />
     </section>
 
+    <!-- SERIES Y PELÍCULAS -->
     <section id="series-peliculas">
-      <div class="mx-8 p-8">
+      <div class="px-4 sm:px-6 md:px-8 py-8">
         <h1 class="text-2xl font-bold my-6">Películas</h1>
-        <div class="grid grid-cols-5 gap-8 h-70 ">
-          <Card v-for="peli in peliculas" :key="peli.id" v-bind="peli"  class="hover:scale-110 transition-all duration-300 "/>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+          <Card
+            v-for="peli in peliculas"
+            :key="peli.id"
+            v-bind="peli"
+            class="hover:scale-105 transition-all duration-300"
+          />
         </div>
 
-        <h1 class="text-2xl font-bold my-6">Series</h1>
-        <div class="grid grid-cols-5 gap-8 h-70">
-          <Card v-for="serie in series" :key="serie.id" v-bind="serie" 
-          class="hover:scale-110 transition-all duration-300"/>
+        <h1 class="text-2xl font-bold my-6 mt-10">Series</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+          <Card
+            v-for="serie in series"
+            :key="serie.id"
+            v-bind="serie"
+            class="hover:scale-105 transition-all duration-300"
+          />
         </div>
       </div>
     </section>
 
+    <!-- IPTV -->
     <section id="iptv" class="relative my-20 overflow-hidden">
-      <div
-        class="absolute inset-0 flex justify-center items-center pointer-events-none z-0"
-      >
+      <!-- Destello de fondo -->
+      <div class="absolute inset-0 flex justify-center items-center pointer-events-none z-0">
         <div
-          class="w-[800px] h-[500px] rounded-full bg-[radial-gradient(circle,_rgba(255,255,255,0.3)_0%,_transparent_70%)] blur-2xl animate-pulse"
+          class="w-[600px] sm:w-[700px] md:w-[800px] h-[400px] sm:h-[450px] md:h-[500px] rounded-full bg-[radial-gradient(circle,_rgba(255,255,255,0.3)_0%,_transparent_70%)] blur-2xl animate-pulse"
         ></div>
       </div>
 
-      <div
-        class="relative max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center z-10 py-20"
-      >
+      <!-- Contenido IPTV -->
+      <div class="relative max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center z-10 px-4 sm:px-6 lg:px-8 py-16">
         <div>
-          <h1 class="text-orange-500 text-4xl font-bold mb-4">
+          <h1 class="text-orange-500 text-3xl sm:text-4xl font-bold mb-4">
             IPTV (Canales de TV)
           </h1>
-          <p class="text-justify text-lg leading-relaxed text-neutral-200">
-            Disfruta de tus canales favoritos de todo el mundo. Podrás ver tus
-            partidos de fútbol, Fórmula 1 o baloncesto preferidos, además de
-            contar con canales infantiles ideales para tus hijos. Vive más de lo
-            que amas con servicios de streaming premium, todo en MagisTV. Todos
-            los servicios funcionan completamente gratis.
+          <p class="text-justify text-base sm:text-lg leading-relaxed text-neutral-200">
+            Disfruta de tus canales favoritos de todo el mundo. Podrás ver tus partidos de fútbol, Fórmula 1 o baloncesto preferidos, además de contar con canales infantiles ideales para tus hijos. Vive más de lo que amas con servicios de streaming premium, todo en MagisTV. Todos los servicios funcionan completamente gratis.
           </p>
         </div>
 
-        <div class="w-full rounded-2xl p-4">
+        <div class="w-full rounded-2xl p-2 sm:p-4">
           <LayoutGrid :iptv="iptv" />
         </div>
       </div>
     </section>
 
+    <!-- DESCARGAR -->
     <section id="descargar" class="mt-10">
       <HeroGeometric badge="Descargar" title1="Descarga MagisTV" />
     </section>
 
-    <section id="acerca-de" class="mt-10 px-6">
+    <!-- ACERCA DE -->
+    <section id="acerca-de" class="mt-10 px-4 sm:px-6 lg:px-8">
       <FeaturesSection />
     </section>
 
+    <!-- PLANES -->
     <section id="planes">
       <Pricing />
     </section>

@@ -8,6 +8,8 @@ import AnimateOnScroll from 'primevue/animateonscroll';
 import { OhVueIcon, addIcons } from 'oh-vue-icons';
 import ToastService from 'primevue/toastservice';
 import Toast from 'primevue/toast';
+import { MotionPlugin } from '@vueuse/motion';
+
 import {
   FaClosedCaptioning,
   MdAppblockingSharp,
@@ -15,6 +17,9 @@ import {
   MdClosedcaptionoffRound,
   Ri24HoursLine,
   BiPcDisplay,
+  FaFacebookF,
+  FaInstagram,
+  FaTwitter,
 } from 'oh-vue-icons/icons';
 
 addIcons(
@@ -23,7 +28,10 @@ addIcons(
   FaTools,
   MdClosedcaptionoffRound,
   Ri24HoursLine,
-  BiPcDisplay
+  BiPcDisplay,
+  FaFacebookF,
+  FaInstagram,
+  FaTwitter,
 );
 
 const app = createApp(App);
@@ -35,6 +43,7 @@ app.use(PrimeVue, {
 });
 
 app.use(router);
+app.use(MotionPlugin)
 app.component('VIcon', OhVueIcon);
 app.component('Toast', Toast);
 app.directive('animateonscroll', AnimateOnScroll);

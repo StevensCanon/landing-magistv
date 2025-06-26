@@ -24,13 +24,14 @@ onMounted(() => {
 
 <template>
   <div
-    class="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-[#030303] pt-10"
+    class="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-[#030303] pt-10 px-4 sm:px-6"
   >
+    <!-- Fondo degradado -->
     <div
       class="absolute inset-0 bg-gradient-to-br from-indigo-500/[0.05] via-transparent to-rose-500/[0.05] blur-3xl"
     />
 
-    <!-- Background shapes -->
+    <!-- Figuras decorativas -->
     <div class="absolute inset-0 overflow-hidden">
       <ElegantShape
         :delay="0.3"
@@ -74,10 +75,10 @@ onMounted(() => {
       />
     </div>
 
-    <div class="relative z-10 container mx-auto px-4 md:px-6">
+    <!-- Contenido -->
+    <div class="relative z-10 container mx-auto">
+      <!-- Título y descripción -->
       <div class="max-w-3xl mx-auto text-center">
-        
-
         <div
           class="fade-up-element"
           :class="{ 'animate-fade-up': animatedElements.title }"
@@ -98,7 +99,7 @@ onMounted(() => {
           :class="{ 'animate-fade-up': animatedElements.description }"
         >
           <p
-            class="text-base sm:text-lg md:text-xl text-white/50 mb-8 leading-relaxed font-light tracking-wide max-w-4xl mx-auto px-4"
+            class="text-base sm:text-lg md:text-xl text-white/50 mb-8 leading-relaxed font-light tracking-wide max-w-4xl mx-auto"
           >
             Magis TV APK ofrece una poderosa biblioteca de contenido, una
             interfaz simple y fácil de usar, lo que permite a los usuarios tener
@@ -106,34 +107,44 @@ onMounted(() => {
           </p>
         </div>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 place-items-center">
-        <div class="flex flex-col items-center hover:scale-115 transition-all duration-300 hover:text-orange-500">
-          <a href="https://www.magistvpc.info/descargar/magis-celular.apk">
-            <img
-              src="https://magistvapkz.com/wp-content/uploads/2025/04/Magis-TV-APK-logo-1-3.webp"
-              alt="MagisTV"
-              class="w-30 object-cover rounded-2xl mb-4 "
-            />
-          </a>
-          <h3 class="text-lg font-bold">Magis Android (Celular y PC)</h3>
-        </div>
-        <a href="https://www.magistvpc.info/descargar/magis-video.apk">
-          <div class="flex flex-col items-center hover:scale-115 transition-all duration-300 hover:text-orange-500">
-            <img
-              src="https://magistvapkz.com/wp-content/uploads/2025/04/Magis-TV-APK-logo-1-3.webp"
-              alt="MagisTV"
-              class="w-30 object-cover rounded-2xl mb-4 "
-            />
 
-            <h3 class="text-lg font-bold">Magis TV (Tv Box)</h3>
-          </div>
-        </a>
-      </div>
+      <!-- Botones de descarga -->
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 gap-10 md:gap-20 mt-10 mb-20 place-items-center"
+      >
+      <a
+  href="https://www.magistvpc.info/descargar/magis-celular.apk"
+  class="flex flex-col items-center hover:scale-105 transition-all duration-300 hover:text-orange-500 text-center"
+>
+  <img
+    src="https://magistvapkz.com/wp-content/uploads/2025/04/Magis-TV-APK-logo-1-3.webp"
+    alt="MagisTV"
+    class="w-24 sm:w-28 md:w-32 object-cover rounded-2xl mb-4"
+  />
+  <h3 class="text-base sm:text-lg font-bold">Magis Android (Celular y PC)</h3>
+</a>
+
+<a
+  href="https://www.magistvpc.info/descargar/magis-video.apk"
+  class="flex flex-col items-center hover:scale-105 transition-all duration-300 hover:text-orange-500 text-center"
+>
+  <img
+    src="https://magistvapkz.com/wp-content/uploads/2025/04/Magis-TV-APK-logo-1-3.webp"
+    alt="MagisTV"
+    class="w-24 sm:w-28 md:w-32 object-cover rounded-2xl mb-4"
+  />
+  <h3 class="text-base sm:text-lg font-bold">Magis TV (Tv Box)</h3>
+</a>
+</div>
+
+      <!-- Servicios -->
       <div class="my-20 text-center">
-        <h2 class="text-2xl md:text-3xl font-bold mb-10">
+        <h2 class="text-xl sm:text-2xl md:text-3xl font-bold mb-10">
           Servicios proporcionados
         </h2>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+        <div
+          class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-4xl mx-auto"
+        >
           <div
             class="flex flex-col items-center space-y-2 rounded-2xl p-4 hover:scale-105 transition-all duration-300 hover:bg-orange-500"
           >
@@ -145,12 +156,7 @@ onMounted(() => {
           <div
             class="flex flex-col items-center space-y-2 rounded-2xl p-4 hover:scale-105 transition-all duration-300 hover:bg-orange-500"
           >
-            <v-icon
-              name="bi-pc-display"
-              scale="2"
-              fill="white"
-              class="mouse-pointer event-scale transition-all duration-300"
-            />
+            <v-icon name="bi-pc-display" scale="2" fill="white" />
             <p class="text-sm md:text-base font-medium">
               Soporte multidispositivo
             </p>
@@ -173,6 +179,7 @@ onMounted(() => {
       </div>
     </div>
 
+    <!-- Oscurecedor -->
     <div
       class="absolute inset-0 bg-gradient-to-t from-[#030303] via-transparent to-[#030303]/80 pointer-events-none"
     />
