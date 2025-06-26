@@ -68,22 +68,25 @@ const features = [
           </div>
 
           <!-- type: two -->
-          <div v-if="feature.type === 'two'" class="relative flex flex-col sm:flex-row sm:overflow-x-auto items-center p-2 sm:p-4 gap-4 h-full">
+          <div
+            v-if="feature.type === 'two'"
+            class="relative flex flex-col items-center p-4 gap-4 h-full"
+          >
             <img
               src="https://support.bluestacks.com/hc/article_attachments/33151214404493"
-              class="rounded-lg w-full sm:w-1/3 h-24 md:h-32 object-cover border border-orange-500 dark:border-orange-700"
+              class="rounded-lg w-full h-24 md:h-32 object-cover mt-2 border border-orange-500 dark:border-orange-700"
             />
             <img
               src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1swkOf.img?w=768&h=422&m=6"
-              class="rounded-lg w-full sm:w-1/3 h-24 md:h-32 object-cover border border-orange-500 dark:border-orange-700"
+              class="rounded-lg w-full h-24 md:h-32 object-cover mt-2 border border-orange-500 dark:border-orange-700"
             />
             <img
               src="https://cdn.eldestapeweb.com/eldestape/022025/1738766061146.webp?cw=720&ch=540&extw=jpg"
-              class="rounded-lg w-full sm:w-1/3 h-24 md:h-32 object-cover border border-orange-500 dark:border-orange-700"
+              class="rounded-lg w-full h-24 md:h-32 object-cover mt-2 border border-orange-500 dark:border-orange-700"
             />
 
-            <div class="absolute left-0 z-[100] inset-y-0 w-10 bg-gradient-to-r from-black dark:from-black to-transparent pointer-events-none" />
-            <div class="absolute right-0 z-[100] inset-y-0 w-10 bg-gradient-to-l from-black dark:from-black to-transparent pointer-events-none" />
+            <div className="absolute left-0 z-[100] inset-y-0 w-30 bg-gradient-to-r from-black dark:from-black to-transparent  h-full pointer-events-none" />
+            <div className="absolute right-0 z-[100] inset-y-0 w-30 bg-gradient-to-l from-black dark:from-black  to-transparent h-full pointer-events-none" />
           </div>
 
           <!-- type: three -->

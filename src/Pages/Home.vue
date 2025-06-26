@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { MotionPlugin } from '@vueuse/motion';
+import { onMounted } from 'vue';
 import { Card, LayoutGrid, FeaturesSection, Pricing } from '../components';
 import Hero from '../components/Hero.vue';
 import HeroGeometric from '../components/ui/HeroGeometric.vue';
@@ -101,10 +103,10 @@ const iptv = [
 </script>
 
 <template>
-  <div>
+  <div class="motion-safe:scroll-smooth">
     <!-- HERO -->
     <section id="hero">
-      <Hero />
+      <Hero v-motion :initial="{ opacity: 0, y: 40 }" :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }" />
     </section>
 
     <!-- SERIES Y PELÍCULAS -->
@@ -117,6 +119,9 @@ const iptv = [
             :key="peli.id"
             v-bind="peli"
             class="hover:scale-105 transition-all duration-300"
+            v-motion
+            :initial="{ opacity: 0, y: 40 }"
+            :enter="{ opacity: 1, y: 0, transition: { duration: 500 } }"
           />
         </div>
 
@@ -127,6 +132,9 @@ const iptv = [
             :key="serie.id"
             v-bind="serie"
             class="hover:scale-105 transition-all duration-300"
+            v-motion
+            :initial="{ opacity: 0, y: 40 }"
+            :enter="{ opacity: 1, y: 0, transition: { duration: 500 } }"
           />
         </div>
       </div>
@@ -142,7 +150,12 @@ const iptv = [
       </div>
 
       <!-- Contenido IPTV -->
-      <div class="relative max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center z-10 px-4 sm:px-6 lg:px-8 py-16">
+      <div
+        class="relative max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center z-10 px-4 sm:px-6 lg:px-8 py-16"
+        v-motion
+        :initial="{ opacity: 0, y: 50 }"
+        :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }"
+      >
         <div>
           <h1 class="text-orange-500 text-3xl sm:text-4xl font-bold mb-4">
             IPTV (Canales de TV)
@@ -160,17 +173,17 @@ const iptv = [
 
     <!-- DESCARGAR -->
     <section id="descargar" class="mt-10">
-      <HeroGeometric badge="Descargar" title1="Descarga MagisTV" />
+      <HeroGeometric badge="Descargar" title1="Descarga MagisTV" v-motion :initial="{ opacity: 0, y: 60 }" :enter="{ opacity: 1, y: 0, transition: { duration: 700 } }" />
     </section>
 
     <!-- ACERCA DE -->
     <section id="acerca-de" class="mt-10 px-4 sm:px-6 lg:px-8">
-      <FeaturesSection />
+      <FeaturesSection v-motion :initial="{ opacity: 0, y: 60 }" :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }" />
     </section>
 
     <!-- PLANES -->
     <section id="planes">
-      <Pricing />
+      <Pricing v-motion :initial="{ opacity: 0, y: 60 }" :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }" />
     </section>
   </div>
 </template>
